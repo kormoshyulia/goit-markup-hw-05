@@ -38,7 +38,8 @@ subscribe-btn{
   background-color: #4D5AE5;
   border: none;
   border-radius: 4px;
-
+padding: 8px 24px;
+margin-left: 24px;
 }
 .subscribe-input::placeholder {
   color: #ffffff;
@@ -376,7 +377,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-    
+
     row-gap: 48px;
     margin: 0;
     align-items: center;
@@ -563,7 +564,7 @@ margin-bottom: 4px;
 .modal-icon-input:focus {
   fill: #4D5AE5; 
 }
-.checkbox:checked .label-span {
+.checkbox:checked + .checkbox-label .label-span {
   background-color: var(--color-dark-blue);
   border: none;
   fill: var(--color-light);

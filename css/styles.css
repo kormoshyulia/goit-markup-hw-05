@@ -77,6 +77,18 @@ subscribe-btn{
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .modal-btn {
   position: absolute;
   top: 24px;
@@ -547,10 +559,28 @@ margin-bottom: 4px;
 .modal-icon-input:focus {
   fill: #4D5AE5; 
 }
-.checkbox:checked {
+.checkbox:checked + .label-span {
   background-color: var(--color-dark-blue);
   border: none;
   fill: var(--color-light);
+}
+.btn-form {
+  display: block; 
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4D5AE5;
+  border: none; 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.privacy-link {
+  color: var(--color-blue)
 }
 .comment-container {
   margin-bottom: 16px;

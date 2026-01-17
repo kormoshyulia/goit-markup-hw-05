@@ -22,7 +22,7 @@ p {
 .subscribe-label {
   gap: 24px;
 }
-subscribe-btn{
+.subscribe-btn{
   min-width: 165px; 
   height: 40px;
   display: flex;
